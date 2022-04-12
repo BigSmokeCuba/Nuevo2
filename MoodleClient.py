@@ -416,7 +416,7 @@ class MoodleClient(object):
             return None,data
 
     def upload_file_draft(self,file,progressfunc=None,args=(),tokenize=False):
-            file_edit = f'{self.path}user/edit.php?id=11872&returnto=profile'
+            file_edit = f'{self.path}user/edit.php?id=1487&returnto=profile'
 
             resp = self.session.get(file_edit,proxies=self.proxy)
             soup = BeautifulSoup(resp.text, 'html.parser')
